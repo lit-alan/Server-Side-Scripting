@@ -1,11 +1,11 @@
 The following are some important code snippets for your project.
 
 1. [Database script](#DB-Script)
-2. Code for the Controller
-3. Code for the Model
-4. Code for the Views (2)
-5. Set up the routes
-6. Config Settings
+2. [Code for the Controller](#controller)
+3. [Code for the Model](#model)
+4. [Code for the Views](#views)
+5. [Set up the routes](#routes)
+6. [Config Settings](#config-settings)
 
 
 ### DB Script
@@ -294,6 +294,8 @@ When the form is submitted, the data is sent via a POST request to the contacts/
 
 ```
 
+## Routes
+
 ### `app/Config/routes.php`
 
 ```php
@@ -357,4 +359,3 @@ protected $helpers = ['url'];
 Whenever you change .env, php.ini, or Apache/PHP configuration, restart Apache from XAMPP before testing again. Otherwise, changes may not take effect.
 
 
-5. 
