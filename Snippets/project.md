@@ -1,3 +1,6 @@
+Before you begin, download [CodeIgniter 4](https://codeigniter.com/download) as a zip. Place the ZIP file into the XAMPP htdocs directory and extract it. After extraction, you may get a folder with a long or versioned name (e.g. codeigniter-project-main). Rename this folder to `address-book`. So the final path should be `C:\xampp\htdocs\address-book`
+
+
 The following are some important code snippets for your project.
 
 1. [Database script](#DB-Script)
@@ -357,5 +360,15 @@ protected $helpers = ['url'];
 5. Restart Apache after changes
 
 Whenever you change .env, php.ini, or Apache/PHP configuration, restart Apache from XAMPP before testing again. Otherwise, changes may not take effect.
+
+
+Assuming everything is in place, you should see the following when you visit `http://localhost/address-book/public/contacts`
+
+<img width="588" height="814" alt="image" src="https://github.com/user-attachments/assets/8625e2db-89f5-44d3-b9f3-0467bc313c50" />
+
+Clicking on the `Add New Contact` link should bringin up this form, which will allow a new contact to be added to the database.
+
+<img width="225" height="491" alt="image" src="https://github.com/user-attachments/assets/bc2f3539-3974-4359-8d56-3cb08612092b" />
+
 
 
