@@ -366,7 +366,7 @@ Assuming everything is in place, you should see the following when you visit `ht
 
 <img width="588" height="814" alt="image" src="https://github.com/user-attachments/assets/8625e2db-89f5-44d3-b9f3-0467bc313c50" />
 
-Clicking on the `Add New Contact` link should bringin up this form, which will allow a new contact to be added to the database.
+Clicking on the `Add New Contact` link should bring up this form, which will allow a new contact to be added to the database.
 
 <img width="225" height="491" alt="image" src="https://github.com/user-attachments/assets/bc2f3539-3974-4359-8d56-3cb08612092b" />
 
