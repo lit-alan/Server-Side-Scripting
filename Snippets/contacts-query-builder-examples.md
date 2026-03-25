@@ -1,10 +1,10 @@
-## CodeIgniter Query Builder Examples for the Contacts Table
+## CodeIgniter Query Builder Examples for the Contacts Table 📊
 
 _In the following examples `$contactModel` is an instance of your model class that represents the `contacts` table and provides methods to interact with the database (e.g. querying, inserting, updating, deleting records)._
 
 _Remember that `$data['contacts']` is an associative array, where each item represents a single contact and each key corresponds to a column name (e.g. first_name, email)._
 
-**1. Get latest contacts (you already have this)**
+**1. Get latest contacts (you already have this)** 
 
 ```php
 //Retrieves all contacts from the database, ordered by id in descending order.
