@@ -181,7 +181,9 @@ class ContactModel extends Model
 
 ## Views
 
-### `app/views/index.php`
+_at this point, create a folder in `app/views` called `contacts`. We will store our two views in this folder. Its not required, but it helps to better organise our files/views._
+
+### `app/views/contacts/index.php`
 
 This view displays a list of all contacts retrieved from the database in a table format.
 
@@ -230,7 +232,7 @@ It loops through the $contacts array provided by the controller and outputs each
 </html>
 ```
 
-### `app/views/create.php`
+### `app/views/contacts/create.php`
 
 This view displays a simple HTML form that allows the user to enter contact details and submit them to the application.
 
