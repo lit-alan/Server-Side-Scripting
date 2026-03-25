@@ -180,13 +180,13 @@ class ContactModel extends Model
 
 ## Views
 
-_at this point, create a folder in `app/views` called `contacts`. We will store our two views in this folder. Its not required, but it helps to better organise our files/views._
+_At this point, create a folder in `app/views` called `contacts`. We will store our two views in this folder. Its not required, but it helps to better organise our files/views._
 
 ### `app/views/contacts/index.php`
 
 This view displays a list of all contacts retrieved from the database in a table format.
 
-It loops through the $contacts array provided by the controller and outputs each contact’s details, using esc() to safely display the data, while also providing a link to add a new contact.
+It loops through the `$contacts` array provided by the controller and outputs each contact’s details, using `esc()` to safely display the data, while also providing a link to add a new contact.
 
 ```php
 <!DOCTYPE html>
@@ -235,7 +235,7 @@ It loops through the $contacts array provided by the controller and outputs each
 
 This view displays a simple HTML form that allows the user to enter contact details and submit them to the application.
 
-When the form is submitted, the data is sent via a POST request to the contacts/store route (generated using base_url()), where it is processed and saved to the database. Each input field corresponds to a column in the contacts table.
+When the form is submitted, the data is sent via a `POST` request to the contacts/store route (generated using `base_url()`), where it is processed and saved to the database. Each input field corresponds to a column in the contacts table.
 
 ```php
 <!DOCTYPE html>
@@ -316,7 +316,7 @@ These settings ensure that the framework can generate the correct URLs, connect 
 
 **1. Set the Base URL in the `.env` file**
 
-In the project root, open the .env file and set:
+In the project root, open the `.env` file and set:
 
 ```ini
 CI_ENVIRONMENT = development
@@ -327,7 +327,7 @@ app.baseURL = 'http://localhost/address-book/public/'
 
 CodeIgniter also needs the correct database settings so it can connect to MySQL.
 
-Add or update these lines in .env:
+Add or update these lines in `.env`:
 
 ```ini
 database.default.hostname = localhost
@@ -342,13 +342,13 @@ _This assumes the database is called address_book, the MySQL username is root, a
 
 **3. Enable the required PHP extensions**
 
-Some PHP extensions must be enabled. In the active php.ini file for the PHP version Apache is using, make sure the following are enabled:
+Some PHP extensions must be enabled. In the `php.ini` file for the PHP version Apache is using, make sure the following are enabled:
 
 ```ini
 extension=mysqli
 extension=intl
 ```
-_The php.ini file is part of the PHP installation, not the CodeIgniter project._
+_The `php.ini` file is part of the PHP installation, not the CodeIgniter project._
 
 **4. Make sure the URL helper is loaded**
 
