@@ -1,6 +1,6 @@
 ## CodeIgniter Query Builder Examples for the Contacts Table
 
-
+_In the following examples `$contactModel` is an instance of your model class that represents the `contacts` table and provides methods to interact with the database (e.g. querying, inserting, updating, deleting records)._
 
 **1. Get latest contacts (you already have this)**
 
@@ -41,6 +41,7 @@ $data['contacts'] = $contactModel
 ```
 
 **4. Search by last name**
+```php
 //Retrieves all contacts where the last name contains "Murphy".
 //like('last_name', 'Murphy') performs a partial match search (e.g. "Murphy", "O'Murphy").
 //findAll() executes the query and returns the matching results as an array.
@@ -127,7 +128,7 @@ $pager = $contactModel->pager;
 
 ```
 
-12. Search across multiple fields
+**12. Search across multiple fields**
 
 ```php
 //Retrieves contacts where either the first name or last name contains "John".
@@ -142,7 +143,7 @@ $data['contacts'] = $contactModel
 
 ```
 
-13. Get contacts with missing emails
+**13. Get contacts with missing emails**
 
 ```php
 $data['contacts'] = $contactModel
@@ -150,12 +151,12 @@ $data['contacts'] = $contactModel
     ->findAll();
 ```
 
-14. Delete a contact by their ID
+**14. Delete a contact by their ID**
 ```php
 $contactModel->delete($id);
 ```
 
-15. Update a contacts phone number (partial update)
+**15. Update a contacts phone number (partial update)**
 
 ```php
 $contactModel->update($id, [
@@ -164,7 +165,7 @@ $contactModel->update($id, [
 ```
 
 
-16. Update an entire contact
+**16. Update an entire contact**
 
 ```php
 $contactModel->update($id, [
