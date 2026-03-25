@@ -363,7 +363,7 @@ protected $helpers = ['url'];
 Whenever you change .env, php.ini, or Apache/PHP configuration, restart Apache from XAMPP before testing again. Otherwise, changes may not take effect.
 
 
-Assuming everything is in place, you should see the following when you visit `http://localhost/address-book/public/contacts`
+Assuming everything is in place, you should see the following when you visit `http://localhost[:port]/address-book/public/contacts`
 
 <img width="588" height="814" alt="image" src="https://github.com/user-attachments/assets/8625e2db-89f5-44d3-b9f3-0467bc313c50" />
 
