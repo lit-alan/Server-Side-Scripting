@@ -152,7 +152,6 @@ class Contacts extends BaseController
 This model represents the contacts table and provides an interface for interacting with it, allowing the application to perform operations such as retrieving, inserting, and updating contact records while controlling which fields can be written to the database.
 
 ```php
-
 <?php
 
 namespace App\Models;
