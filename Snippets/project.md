@@ -314,7 +314,7 @@ $routes->post('/contacts/store', 'Contacts::store');
 To get the project running correctly in CodeIgniter, there are a few configuration steps that must be completed before the application will work properly. 
 These settings ensure that the framework can generate the correct URLs, connect to the database, and use the required PHP features.
 
-1. Set the Base URL in the `.env` file
+**1. Set the Base URL in the `.env` file**
 
 In the project root, open the .env file and set:
 
@@ -323,7 +323,7 @@ CI_ENVIRONMENT = development
 app.baseURL = 'http://localhost/address-book/public/'
 ```
 
-2. Configure the Database in the .env file
+**2. Configure the Database in the .env file**
 
 CodeIgniter also needs the correct database settings so it can connect to MySQL.
 
@@ -340,7 +340,7 @@ database.default.port = 3306
 
 _This assumes the database is called address_book, the MySQL username is root, and there is no password, which is typical in a local XAMPP setup._
 
-3. Enable the required PHP extensions
+**3. Enable the required PHP extensions**
 
 Some PHP extensions must be enabled. In the active php.ini file for the PHP version Apache is using, make sure the following are enabled:
 
@@ -350,7 +350,7 @@ extension=intl
 ```
 _The php.ini file is part of the PHP installation, not the CodeIgniter project._
 
-4. Make sure the URL helper is loade
+**4. Make sure the URL helper is loaded**
 
 The URL helper must be loaded. This can be done in `app/Controllers/BaseController.php`
 
@@ -358,7 +358,7 @@ The URL helper must be loaded. This can be done in `app/Controllers/BaseControll
 protected $helpers = ['url'];
 ```
 
-5. Restart Apache after changes
+**5. Restart Apache after changes**
 
 Whenever you change .env, php.ini, or Apache/PHP configuration, restart Apache from XAMPP before testing again. Otherwise, changes may not take effect.
 
